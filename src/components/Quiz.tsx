@@ -10,13 +10,20 @@ type QuizProps = {
 const Quiz = ({ questions }: QuizProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+    const [score, setScore] = useState(0);
+
 
     const nextQuestion = () => {
+        if (selectedIndex === questions[currentIndex].correctIndex) {
+            setScore(score + 1);
+        }
+
         if (currentIndex < questions.length - 1) {
             setCurrentIndex(currentIndex + 1);
             setSelectedIndex(null);
         }
     };
+
 
     return (
         <div className="bg-rose-50 border border-rose-200 shadow rounded-xl p-6 text-center space-y-4">
@@ -36,6 +43,10 @@ const Quiz = ({ questions }: QuizProps) => {
             <p className="text-sm text-gray-500">
                 Ερώτηση {currentIndex + 1} από {questions.length}
             </p>
+            <p className="text-sm text-gray-600">
+                Score: {score}
+            </p>
+
 
             {/* Next button */}
             <Button
