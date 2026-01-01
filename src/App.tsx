@@ -18,7 +18,7 @@ const QUESTIONS: Question[] = [
 
 function App() {
     return (
-        <div className="min-h-screen bg-purple-50/100 ">
+        <div className="min-h-screen bg-purple-50 ">
             <div className="max-w-2xl mx-auto pt-10 px-4">
                 <h1 className="text-center text-3xl font-bold mb-8 text-gray-800 leading-tight">
                     Mini Quiz
