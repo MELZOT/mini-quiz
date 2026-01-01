@@ -16,3 +16,9 @@ export type QuizListProps = {
     selectedIndex: number | null;
     onSelect: (index: number) => void;
 };
+
+export type ResultScreenProps = {
+    score: number;
+    total: number;
+    onRestart: () => void;
+};
