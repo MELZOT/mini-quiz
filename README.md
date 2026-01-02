@@ -28,8 +28,11 @@
 - `Button` – επαναχρησιμοποιήσιμο κουμπί
 - `ResultScreen` – εμφάνιση τελικού σκορ
 
-## Screenshot
-![Mini Quiz Screenshot](screenshots/miniquiz.png,score.png)
+## Screenshots
+
+![Quiz Question](screenshots/miniquiz.png)
+![Quiz Result](screenshots/score.png)
+
 
 ## Εκτέλεση εφαρμογής
 ```bash
